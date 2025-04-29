@@ -138,7 +138,7 @@ Existem dois scripts disponíveis:
 1.  **Abra o Azure Cloud Shell:** Faça login no Portal Azure e clique no ícone do Cloud Shell (`>_`) na barra superior. Escolha o ambiente `Bash`.
 2.  **Faça o Upload ou Clone:**
     *   **Opção 1 (Upload):** Clique no ícone de Upload/Download de arquivos no Cloud Shell e envie o arquivo `setup_monitoramento_adf.sh` para o seu diretório home.
-    *   **Opção 2 (Clone):** Se o script estiver em um repositório Git, clone o repositório: `git clone <URL_DO_SEU_REPOSITORIO>` e navegue até a pasta: `cd <NOME_DA_PASTA>`.
+    *   **Opção 2 (Clone):** Se o script estiver em um repositório Git, clone o repositório: `git clone https://github.com/MarcosWinther/project-azure-creating-cost-monitoring-in-Data-Factory` e navegue até a pasta: `cd src`.
 3.  **Edite as Variáveis:** **Este passo é crucial!** Abra o script com um editor (como `nano` ou `code` no Cloud Shell) e **substitua os valores de placeholder** pelas suas informações reais:
     *   `nano setup_monitoramento_adf.sh`
     *   Altere `<SEU_ID_DE_ASSINATURA>`, `<SEU_RESOURCE_GROUP>`, `<NOME_DO_SEU_DATA_FACTORY>`, `<NOME_DO_WORKSPACE>` e `<RESOURCE_GROUP_DO_WORKSPACE>`.
@@ -155,9 +155,6 @@ Existem dois scripts disponíveis:
 *   Editar as variáveis dentro do arquivo `.py` com suas informações.
 *   Executar o script com `python adf_monitoramento_custos.py`.
 *   A autenticação `DefaultAzureCredential` tentará usar as credenciais do Cloud Shell automaticamente.
-
-<br>
-
 
 <br>
 
